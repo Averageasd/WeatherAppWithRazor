@@ -1,0 +1,22 @@
+﻿@model WeatherData
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Weather Detail</title>
+	<meta charset="utf-8" />
+	<link href="~/StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+	<h1>Weather detail</h1>
+	<div>
+		<h3>Code: @Model.CityUniqueCode</h3>
+		<p>City: @Model.CityName</p>
+		<p>Date: @Model.DateAndTime</p>
+		<p>Temperature: @Model.TemperatureFahrenheit farenheit</p>
+		<div>
+			<a href="/">Home</a>
+		</div>
+	</div>
+</body>
+</html>
