@@ -21,7 +21,7 @@ namespace WeatherAppWithRazor.Controllers
 			{
 				return View(selectedWeatherData);
 			}
-			return LocalRedirect($"/error/${weatherCode}");
+			return LocalRedirect($"/error/{weatherCode}");
 		}
 
 		[Route("/error/{weatherCode}")]
