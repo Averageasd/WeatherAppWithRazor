@@ -5,10 +5,7 @@
 		@foreach (WeatherData weatherData in Model)
 		{
 			<li>
-				<p>Code: @weatherData.CityUniqueCode</p>
-				<p>City: @weatherData.CityName</p>
-				<p>Date: @weatherData.DateAndTime</p>
-				<p>Temperature: @weatherData.TemperatureFahrenheit farenheit</p>
+				<partial name="_CityDetailPartial" model="weatherData"></partial>
 				<div>
 					<a href="/weather/@weatherData.CityUniqueCode">detail</a>
 				</div>

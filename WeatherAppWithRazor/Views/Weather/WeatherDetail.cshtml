@@ -2,10 +2,7 @@
 
 <h2>Weather detail</h2>
 <div>
-	<p>Code: @Model.CityUniqueCode</p>
-	<p>City: @Model.CityName</p>
-	<p>Date: @Model.DateAndTime</p>
-	<p>Temperature: @Model.TemperatureFahrenheit farenheit</p>
+	<partial name="_CityDetailPartial" model="Model"></partial>
 	<div>
 		<a href="/">Home</a>
 	</div>
